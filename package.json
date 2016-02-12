@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/Pavel-vo/njs-runtime#readme",
   "dependencies": {
-    "njs-class": "git+https://github.com/Pavel-vo/njs-class.git",
-    "njs-compiler": "git+https://github.com/Pavel-vo/njs-compiler.git",
+    "njs-class": "^1.0.0",
+    "njs-compiler": "^1.0.0",
     "swig": "^1.4.2"
   }
 }
