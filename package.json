@@ -1,0 +1,24 @@
+{
+  "name": "njs-runtime",
+  "version": "1.0.0",
+  "description": "NJS core component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pavel-vo/njs-runtime.git"
+  },
+  "author": "Pavel Nikotin <mail@intelin.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pavel-vo/njs-runtime/issues"
+  },
+  "homepage": "https://github.com/Pavel-vo/njs-runtime#readme",
+  "dependencies": {
+    "njs-class": "git+https://github.com/Pavel-vo/njs-class.git",
+    "njs-compiler": "git+https://github.com/Pavel-vo/njs-compiler.git",
+    "swig": "^1.4.2"
+  }
+}
