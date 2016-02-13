@@ -1,5 +1,4 @@
-# NJS Runtime
-Get rid of callback hell.
+# NJS - Narrative JavaScript
 
 *****
 
@@ -31,9 +30,9 @@ require('./B');
 ```
 
 Module `njs-runtime/node-extension` extends nodejs's module loader with NJS capabilities. So all new `require`'d modules will be processed by NJS parser, and transformed to regular JavaScript.
-> :exclamation: We recommended `njs-runtime/node-extension` only for development,  but NOT for production!
+> :exclamation: We recomme `njs-runtime/node-extension` only for development. Please use [NJS Webpack Plugin](https://github.com/Pavel-vo/njs-webpack-plugin) for production.
 
-Module `njs-runtime` contains blocking primitives you need to write NJS code, so let's save it to global variable `njs`.
+Module `njs-runtime` contains blocking primitives you need to write NJS code. By default NJS - compiled code require NJS-Runtime saved to global variable `njs`.
 
 ##### Create file B.js
 
@@ -64,7 +63,7 @@ testRuntime(); // new thread
 print('three');
 ```
 
-`testRuntime` function wrapped with special Swig tags `{% compileNjs %}...{% endcompileNjs %}`  
+The `testRuntime` function wrapped with special Swig tags `{% compileNjs %}...{% endcompileNjs %}`  
 Content inside tags must be a function, and it will be transformed to a new callback-based function.  
 Points of splitting tagged as `.yld` operator. Yes, it's not a field, it's a special yielding operator which looks-like a field.  
 The reason why we use such notation is the compatibility with JavaScript text editors.
@@ -93,3 +92,5 @@ five > 2020 ms
 - [ ] Editor with support of Swig tags
 - [ ] Limitations
 
+# See also
+* [NJS Webpack Plugin](https://github.com/Pavel-vo/njs-webpack-plugin)
