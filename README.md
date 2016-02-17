@@ -30,7 +30,7 @@ require('./B');
 ```
 
 Module `njs-runtime/node-extension` extends nodejs's module loader with NJS capabilities. So all new `require`'d modules will be processed by NJS parser, and transformed to regular JavaScript.
-> :exclamation: We recomme `njs-runtime/node-extension` only for development. Please use [NJS Webpack Plugin](https://github.com/Pavel-vo/njs-webpack-plugin) for production.
+> :exclamation: We recommed `njs-runtime/node-extension` only for development. Please use [NJS Webpack Plugin](https://github.com/Pavel-vo/njs-webpack-plugin) for production.
 
 Module `njs-runtime` contains blocking primitives you need to write NJS code. By default NJS - compiled code require NJS-Runtime saved to global variable `njs`.
 
